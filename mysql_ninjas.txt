@@ -1,0 +1,40 @@
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ('Dojo_1', now(), now());
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ('Dojo_2', now(), now());
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ('Dojo_3', now(), now());
+
+DELETE FROM dojos;
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ('Dojo_4', now(), now());
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ('Dojo_5', now(), now());
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ('Dojo_6', now(), now());
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja1', 'Last1', 15, now(), now(), 1);
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja2', 'Last2', 20, now(), now(), 1);
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja3', 'Last2', 25, now(), now(), 1);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja4', 'Last4', 35, now(), now(), 2);
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja5', 'Last5', 40, now(), now(),2);
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja6', 'Last6', 55, now(), now(), 2);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja7', 'Last7', 65, now(), now(), 3);
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja8', 'Last8', 70, now(), now(), 3);
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES ('Ninja9', 'Last9', 85, now(), now(), 3);
+
+SELECT * FROM ninjas WHERE dojo_id = 1;
+SELECT * FROM ninjas WHERE dojo_id = 3;
+SELECT * FROM ninjas WHERE id = 9
